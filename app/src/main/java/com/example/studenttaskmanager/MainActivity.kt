@@ -29,6 +29,7 @@ import java.util.*
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,6 +68,22 @@ class MainActivity : AppCompatActivity() {
 
         createNotificationChannel()
     }
+
+    override fun onResume() {
+        super.onResume()
+        refreshTaskList()
+    }
+
+    private fun refreshTaskList() {
+        val db = DbHelper(this, null)
+        val tasks = db.getAllTasks()
+        val taskAdapter = TaskAdapter(this, tasks)
+        val taskRecyclerView = findViewById<RecyclerView>(R.id.task_list_recycler_view)
+        taskRecyclerView.adapter = taskAdapter
+    }
+
+
+
 
     @RequiresApi(Build.VERSION_CODES.O)
     private fun createNotificationChannel()

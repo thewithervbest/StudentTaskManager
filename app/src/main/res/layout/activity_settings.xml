@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Уведомлять за:"
+        android:text="Notify before:"
         android:textSize="18sp"
         android:paddingBottom="8dp" />
 
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Введите время в минутах"
+        android:hint="Enter time in minutes"
         android:padding="12dp"
         android:background="@android:drawable/edit_text"
         android:layout_marginBottom="16dp" />
@@ -30,7 +30,7 @@
         android:id="@+id/saveSettingsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Сохранить настройки"
+        android:text="Save settings"
         android:padding="12dp"
         android:backgroundTint="#9C27B0"
         android:textColor="@android:color/white"

@@ -56,6 +56,7 @@ class CreateTask : AppCompatActivity() {
                 Toast.makeText(this, "Task $title created", Toast.LENGTH_LONG).show()
                 taskTitle.text.clear()
                 taskDesc.text.clear()
+                finish()
             }
         }
 

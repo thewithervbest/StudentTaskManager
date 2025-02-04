@@ -46,10 +46,10 @@ class SettingsActivity : AppCompatActivity() {
                 editor.putInt("reminder_time", reminderTime)
                 editor.apply()
 
-                Toast.makeText(this, "Настройки сохранены!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Settings saved!", Toast.LENGTH_SHORT).show()
                 finish() // Закрыть экран настроек
             } else {
-                Toast.makeText(this, "Введите корректное значение", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Enter a valid value.", Toast.LENGTH_SHORT).show()
             }
         }
     }
