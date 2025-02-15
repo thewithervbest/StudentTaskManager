@@ -1,16 +1,16 @@
 # **Student Task Manager**
 
-## **Main Page**
-![Main Page](image url)
+## **Main Page**  
+<img src="https://github.com/thewithervbest/StudentTaskManager/blob/7606383c6281007c6f0cb3248834adb8bd367722/Main%20Page.png" width="200">
 
-## **Create Task**
-![Create Task](image url)
+## **Create Task**  
+<img src="https://github.com/thewithervbest/StudentTaskManager/blob/7606383c6281007c6f0cb3248834adb8bd367722/Create%20Task%20Page.png" width="200">
 
-## **Edit Task**
-![Edit Task](image url)
+## **Edit Task**  
+<img src="https://github.com/thewithervbest/StudentTaskManager/blob/7606383c6281007c6f0cb3248834adb8bd367722/Edit%20Task%20Page.png" width="200">
 
-## **Settings Page**
-![Settings Page](image url)
+## **Settings Page**  
+<img src="https://github.com/thewithervbest/StudentTaskManager/blob/7606383c6281007c6f0cb3248834adb8bd367722/Notification%20Settings%20Page.png" width="200">
 
-## **Schedule Notification**
-![Schedule Notification](image url)
+## **Schedule Notification**  
+<img src="https://github.com/thewithervbest/StudentTaskManager/blob/7606383c6281007c6f0cb3248834adb8bd367722/Notification%20Page.png" width="200">
