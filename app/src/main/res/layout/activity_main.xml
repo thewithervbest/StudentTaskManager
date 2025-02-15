@@ -5,76 +5,88 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="#FFFFFF"
     android:orientation="vertical"
-    android:padding="16dp">
-
-
-    <!-- Header Layout -->
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingBottom="12dp">
-
-        <!-- Settings Icon -->
+        
         <ImageButton
             android:id="@+id/settings_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@android:drawable/ic_menu_preferences"
-            android:contentDescription="Settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="start"
-            android:minHeight="48dp"
-            android:minWidth="48dp" />
-
-        <!-- Title -->
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clipToOutline="true"
+            android:contentDescription="Settings"
+            android:elevation="4dp"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:outlineProvider="none"
+            android:paddingLeft="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lc_settings"
+            android:stateListAnimator="@anim/button_click" />
+        
         <TextView
             android:id="@+id/task_manager_title"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
+            android:gravity="center"
             android:text="Task Manager"
+            android:textColor="#000000"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:textStyle="bold" />
 
-        <!-- Add Task Button -->
         <ImageButton
             android:id="@+id/add_task_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@android:drawable/ic_input_add"
-            android:contentDescription="Add Task"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="end"
-            android:minHeight="48dp"
-            android:minWidth="48dp" />
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clipToOutline="true"
+            android:contentDescription="Add Task"
+            android:elevation="4dp"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:outlineProvider="none"
+            android:paddingRight="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add_task"
+            android:stateListAnimator="@anim/button_click" />
     </LinearLayout>
 
-    <!-- Divider -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
         android:background="#E0E0E0"
-        android:layout_marginBottom="8dp" />
+        android:elevation="2dp" />
 
-    <!-- Task List -->
     <TextView
         android:id="@+id/no_tasks_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No tasks available. Add a new task!"
-        android:textSize="16sp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:visibility="gone"
-        android:layout_marginTop="16dp" />
+        android:text="No tasks available. Add a new task!"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="gone" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/task_list_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clipToOutline="true"
+        android:elevation="2dp"
+        android:outlineProvider="background"
         android:visibility="visible" />
 </LinearLayout>
