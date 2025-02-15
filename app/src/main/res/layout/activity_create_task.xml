@@ -10,7 +10,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#201E28"
+        android:background="#101010"
         android:orientation="vertical"
         tools:context=".CreateTask">
 
@@ -18,11 +18,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:fontFamily="@font/inter_bold"
-            android:text="Create task"
+            android:text="Create Task"
             android:textColor="#fdfdfd"
-            android:textSize="35sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <EditText
@@ -32,22 +32,26 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="title"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Title"
             android:inputType="text"
-            android:textColor="#fdfdfd"
-            android:textColorHint="#6a6a6a" />
+            android:textColor="#808080"
+            android:textColorHint="#808080" />
 
         <EditText
             android:id="@+id/task_desc"
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:ems="10"
-            android:hint="description"
-            android:inputType="textEmailAddress"
-            android:textColor="#fdfdfd"
-            android:textColorHint="#6a6a6a" />
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Description"
+            android:inputType="text"
+            android:textColor="#808080"
+            android:textColorHint="#808080" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,14 +62,12 @@
             android:textColor="#6a6a6a"
             android:textSize="18sp" />
 
-
         <DatePicker
             android:id="@+id/task_date"
             android:layout_width="250dp"
-            android:layout_height="163dp"
+            android:layout_height="160dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:background="@color/white"
             android:calendarViewShown="false"
             android:datePickerMode="spinner" />
 
@@ -75,7 +77,6 @@
             android:layout_height="163dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:background="@color/white"
             android:timePickerMode="spinner" />
 
         <Button
@@ -85,10 +86,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:backgroundTint="#e2a600"
-            android:text="create"
+            android:text="Create"
             android:textColor="#5e4602"
             android:textSize="16sp"
             android:textStyle="bold" />
-
     </LinearLayout>
 </ScrollView>
