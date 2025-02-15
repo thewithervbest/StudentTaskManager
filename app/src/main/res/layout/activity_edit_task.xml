@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +9,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#201E28"
+        android:background="#101010"
         android:orientation="vertical"
         tools:context=".EditTaskActivity">
 
@@ -18,11 +17,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:fontFamily="@font/inter_bold"
-            android:text="Edit task"
+            android:text="Edit Task"
             android:textColor="#fdfdfd"
-            android:textSize="35sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <EditText
@@ -30,42 +29,41 @@
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:ems="10"
-            android:hint="title"
+            android:hint="Task Name"
             android:inputType="text"
-            android:textColor="#fdfdfd"
-            android:textColorHint="#6a6a6a" />
+            android:textColor="#808080"
+            android:textColorHint="#808080" />
 
         <EditText
             android:id="@+id/editTaskDescription"
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:ems="10"
-            android:hint="description"
-            android:inputType="textEmailAddress"
-            android:textColor="#fdfdfd"
-            android:textColorHint="#6a6a6a" />
+            android:hint="Description"
+            android:inputType="text"
+            android:textColor="#808080"
+            android:textColorHint="#808080" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="34dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Deadline:"
-            android:textColor="#6a6a6a"
+            android:layout_marginTop="10dp"
+            android:text="Deadline: "
+            android:textColor="#808080"
             android:textSize="18sp" />
 
 
         <DatePicker
             android:id="@+id/editTaskDatePicker"
             android:layout_width="250dp"
-            android:layout_height="163dp"
+            android:layout_height="160dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:background="@color/white"
             android:calendarViewShown="false"
             android:datePickerMode="spinner" />
 
@@ -75,8 +73,8 @@
             android:layout_height="163dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:background="@color/white"
             android:timePickerMode="spinner" />
+
 
         <Button
             android:id="@+id/saveTaskButton"
@@ -85,10 +83,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:backgroundTint="#e2a600"
-            android:text="edit"
-            android:textColor="#5e4602"
+            android:text="Edit"
+            android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold" />
-
     </LinearLayout>
 </ScrollView>
